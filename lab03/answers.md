@@ -4,35 +4,62 @@
 
 ### 1.1. List the contents of the lab03-exercises repo immediately after initialization
 ```
-# paste code here
+# total 0
+drwxrwxrwx 1 alwilu alwilu 4096 Sep  5 10:38 .
+drwxrwxrwx 1 alwilu alwilu 4096 Sep  5 10:30 ..
+drwxrwxrwx 1 alwilu alwilu 4096 Sep  5 10:38 .git
+-rwxrwxrwx 1 alwilu alwilu   12 Sep  5 10:34 README.md
 
 
 ```
 
 ### 1.2. Paste the output of your `git status` command
 ```
-# paste code here
+# On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
 
 
 ```
 
 ### 1.3. Paste the output of the state of your repository after committing your README.md file
 ```
-# paste code here
+# On branch main
+nothing to commit, working tree clean
 
 
 ```
 
 ### 1.4. Copy your `git log` output
 ```
-# paste code here
+# commit f7a4cbd2a9d651c022aa93d64c138a51f144c132 (HEAD -> main)
+Author: alwillis4 <awillis4@unca.edu>
+Date:   Thu Sep 5 10:51:15 2024 -0400
+
+    add README.md to the repository
 
 
 ```
 
 ### 1.5. Copy your `git diff` output
 ```
-# paste code here
+# diff --git a/README.md b/README.md
+index cffc80c..c2ac74f 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,3 @@
+-My third lab
+\ No newline at end of file
++My third lab
++Find All Duplicates
++Write a function (or static method in the case of Java) that accepts a list of integers and returns a list of only those integers that appear more than once.
+\ No newline at end of file
 
 
 ```
@@ -42,12 +69,12 @@
 
 We've learned 6 git subcommands now. Describe each of them in your own words in the section below:
 
-* git init
-* git status 
-* git add 
-* git commit 
-* git log 
-* git diff 
+* git init -initialize a repository for you
+* git status - tells you which of the files in your current directory are different from the latest commit in the repo.
+* git add - stages the listed file to be commited 
+* git commit - saves a snapshot of staged files at the exact moment commit is issued
+* git log - shows commit history
+* git diff - shows what changes have been made to a file.
 
 
 ### 1.7. Practice: Find All Duplicates (Java)
@@ -69,10 +96,12 @@ Implement the more efficient Version of the "Find Duplicates" problem using a di
 Please make sure that the new repo that you made today on GitHub is public, and paste a link to it below.
 
 ```bash
-# paste your new repo link here...
+ https://github.com/alwillis4/lab03-exercises/pull/1
 
 ```
 
 ### 3.3. What do the three "Merge pull request" options mean? 
 Describe each of them in your own words.
-
+Merge commit merges the history of the two branches
+Squah and Merge with take the comment of the new branch and squash them into one on the main branch
+Rebase and Merge will have the commits rebase on to the main branch
